@@ -17,6 +17,7 @@ export default function addadustbinpage(){
             <Label>Ward</Label>
             <Input type="text"/>
             <br/>
+            
             <Link href="/" className={buttonVariants({ variant: "default" })}>Back
             </Link>
             <Link href ="/" className={buttonVariants({variant:"default"})}>Create  </Link>
