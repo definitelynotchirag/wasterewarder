@@ -4,6 +4,7 @@ import { dark, neobrutalism } from "@clerk/themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LogoImage from '../../public/logo1.png'
+import Header from './components/Header'
 // import { ClerkProvider } from '@clerk/nextjs';
 
 const inter = Inter({ subsets: ["latin"] });
