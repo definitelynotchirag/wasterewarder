@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark, neobrutalism } from "@clerk/themes";
 import { Inter } from "next/font/google";
+import '@mantine/core/styles.css';
 import "./globals.css";
 import LogoImage from '../../public/logo1.png'
 import Header from './components/Header'
+import { MantineProvider } from "@mantine/core";
 // import { ClerkProvider } from '@clerk/nextjs';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -43,7 +45,7 @@ export default function RootLayout({
       <body className={inter.className} >
           <main className='mx-auto bg-castleton-green'>
             <div className='flex items-start justify-center min-h-screen '>
-              <div className='mt-20'>{children}</div>
+              <div className='mt-20'><MantineProvider>{children}</MantineProvider></div>
             </div>
           </main>
         </body>
